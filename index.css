@@ -2,16 +2,17 @@ body{
     padding: 0;
     margin: 0;
     background-color: black;
-    height: auto;
+    /* height: auto; */
 }
 
 .page0{
     height: 100vh;
     margin-top: -28vh;
     background-color: black;
+    /* overflow-y: hidden; */
 }
 
-.rs{
+.rslaptop{
   font-size: 15rem;
   font-weight: 900;
   color: rgb(37, 183, 37);
@@ -29,6 +30,24 @@ body{
   -o-border-radius: 30%;
 }
 
+.rsmobile{
+    font-size: 15rem;
+    font-weight: 900;
+    color: rgb(37, 183, 37);
+    text-align: center;
+    padding-top: 20vh;
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+    transform-origin: bottom;
+    transition: height 1s ease;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+  }
+
 .trainImage{
 height: 200px;
 width: 200px;
@@ -43,7 +62,7 @@ opacity: 0;
     background-color: black;
     padding: 0;
     margin: 0;
-        overflow: hidden;
+    overflow: hidden;
 
 }
 
@@ -94,7 +113,9 @@ li{
     margin-top: -12vh;
 }
 
-
+.rsmobile{
+    display: none;
+}
 
 .full{
     display: flex;
@@ -110,6 +131,8 @@ li{
     margin-left: 50px;
     -ms-border-radius: 20%;
     -o-border-radius: 20%;
+    box-shadow: 10px 10px 20px rgb(42, 82, 42);
+
 }
 .left p{
     color: white;
@@ -127,9 +150,223 @@ li{
     margin-left: 50px;
 }
 
-.page2,.page3,.page4{
+
+.page2,.page4,.pageextra{
     height: 100vh;
+    display: none;
 }
 .page3{
     background-color: black;
+    height: 100vh;
+   display: none;
+   overflow-x: auto;
+}
+
+.normalImage{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* hover effect */
+/* .normalImage:hover  {
+    transform: scale(1.05) translateY(-5px);
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+} */
+
+
+/* wave effect */
+.normalImage {
+    display: block;
+    animation: pulse 2s infinite ease-in-out;
+}
+.normalImagee {
+    /* display: block; */
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); 
+    }
+}
+
+
+/* float effect
+.normalImage {
+    display: block;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+} */
+
+
+
+
+.arrow{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    height: 300px;
+    width: 300px;
+}
+
+.allimages{
+    display: flex;
+    gap: 4rem;
+}
+
+.allimages img{
+    margin-top: 15vh;
+}
+.arrow {
+    position: relative;
+    top: 10vh;
+}
+
+
+.arrowe{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    height: 300px;
+    width: 300px;
+}
+
+.allimagese{
+    display: flex;
+    gap: 4rem;
+}
+
+.allimagese img{
+    margin-top: 15vh;
+}
+.arrowe {
+    position: relative;
+    top: 10vh;
+}
+
+
+
+
+.page2{
+background-color: red;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .rslaptop{
+        display: none;
+    }
+    .page3{
+        display: none;
+    }
+    .rsmobile{
+        display: block;
+        margin-left: 3vw;
+    }
+    .trainImage{
+        margin-left: 25vw;
+    }
+    .page1,.page2,.page3,.page4{
+      background-color: black;
+    }
+    
+    .page1{
+        height: 110vh;
+    }
+  .textlogo{
+    font-size: 3rem;
+    margin-top: 8vh;
+  }
+
+  nav{
+    height: 13vh;
+  }
+  ul{
+    display: none;
+  }
+  .full{
+    display: block;
+  }
+  .left{
+    border-radius: 0;
+    width: 95vw;
+    margin-left: 10px;
+    padding: 0;
+    height: 50vh;
+    overflow-y: auto;
+}
+.left p{
+    font-size: 1.4rem;
+    width: 80vw;
+    margin-left: -8vw;
+}
+.right img{
+  height: 30vh;
+  width: 70vw;
+  margin-top: 5vh;
+}
+
+
+.page2{
+    height: 90vh;
+    background-color: white;
+}
+.page4{
+    background-color: white;
+
+}
+.pageextra{
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90vh;
+    background-color: black;
+}
+.allimagese{
+    display: block;
+    
+}
+.normalImagee{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 20vw;
+  margin-bottom: 3vh;
+}
+.arrowe{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    height: 50px;
+    width: 50px;
+    margin-left: -35vw;
+}
 }
