@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Montserrat&family=Lora&family=Oswald&family=Raleway&family=Playfair+Display&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM0sw5V5v8J4E4vD3m2xQZZZmFto9vO9/u7Z7b" crossorigin="anonymous">
 
      <!--  Gsap is needed for Basic Effects -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
 <!-- Scroll Trigger is needed for Scroll Effects -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
 <!-- Three.js is needed for 3d Effects -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-
 <!-- ControlKit is needed for Debug Panel -->
 <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
-<link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.css">
 <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- locomotyive  -->
 <script src="
@@ -45,7 +46,7 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
     <div class="circles"></div>
     <div class="circles"></div>
     <div class="circles"></div>
-<!-- 
+
    <section class="page0">
        <div class="mdiv">
         <h1 class="rslaptop">Rail Scouts</h1>
@@ -54,7 +55,7 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
      
          <img src="https://th.bing.com/th/id/OIP.z1hK_zb7h8BVqKAmv8uFngHaHa?rs=1&pid=ImgDetMain" alt="" class="trainImage">
        </div>
-   </section> -->
+   </section>
 
     <section class="page1">
         <nav>
@@ -63,9 +64,13 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
 
             My Way
           </h1>
+
           <!-- <img class="logo" src="https://th.bing.com/th/id/OIP.52sXWVz-alHGrz2QshjeFAHaIC?rs=1&pid=ImgDetMain" alt="" srcset=""> -->
+          <div class="ham"> <i  class="fa-solid fa-bars"></i></div>
           <ul>
-            <a class="do home">Home</a>
+           
+            <a class="do home">Home<i class="fas fa-home"></i> 
+            </a>
             <a class="do about">About</a>
             <a class="do use">Use</a>
             <a class="do developer">Developer</a>
@@ -79,7 +84,9 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                 <span> Tap the given Two modes to find routes</span>
                 <!-- <img src="" alt="" class="text-img"> -->
               </p>
-              
+              <span class="show"> 
+                Tap the given Two modes to find routes</span>
+
         <div class="buttons">
           <button class="loc yes">Live</button>
           <button class="loc no">Without-Live</button>
@@ -99,27 +106,29 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
 
    <section class="page2 aboutt">
       <div class="about-container">
-          <h2>About Rail Scouts             <img class="logo" src="https://cdn3.iconfinder.com/data/icons/web-ui-color/128/Marker_green-512.png" alt="">
-          </h2>
-          <p>
-              Welcome to <strong>Rail Scouts</strong>, your ultimate companion for exploring the world of rail travel. Whether you're a seasoned traveler or planning your first journey, our application is designed to make your experience seamless and enjoyable.
-          </p>
-          <h3>Our Mission</h3>
-          <p>
+         <div class="first">
+            <h2 >About Rail Scouts             <img class="logo" src="https://cdn3.iconfinder.com/data/icons/web-ui-color/128/Marker_green-512.png" alt="">
+            </h2>
+            <p >
+                Welcome to <strong>Rail Scouts</strong>, your ultimate companion for exploring the world of rail travel. Whether you're a seasoned traveler or planning your first journey, our application is designed to make your experience seamless and enjoyable.
+            </p>
+         </div>
+          <h3 >Our Mission</h3>
+          <p >
               At Rail Scouts, we believe in the power of train travel to connect people, places, and cultures. Our mission is to provide you with comprehensive tools and information that empower you to discover new destinations, plan your trips effortlessly, and enjoy every moment on the tracks.
           </p>
-          <h3>What We Offer</h3>
-          <ul>
+          <h3 >What We Offer</h3>
+          <ul >
               <li><strong>Real-Time Updates:</strong> Stay informed with live updates on train schedules, delays, and platform changes. No more waiting in uncertainty!</li>
               <li><strong>Personalized Itineraries:</strong> Create custom travel plans tailored to your preferences. Choose your routes, stops, and even nearby attractions to visit along the way.</li>
               <li><strong>User-Friendly Interface:</strong> Our intuitive design ensures that navigating through schedules and booking tickets is as smooth as your journey itself.</li>
               <li><strong>Community Reviews:</strong> Read and share experiences with fellow travelers. Discover hidden gems and tips that enhance your travel adventure.</li>
           </ul>
-          <h3>Join Our Journey</h3>
-          <p>
+          <h3 >Join Our Journey</h3>
+          <p >
               We are passionate about rail travel and dedicated to making your journeys memorable. With Rail Scouts, you'll not only travel from point A to point B but embark on an adventure filled with stories and connections.
           </p>
-          <p>Thank you for choosing Rail Scouts—where every journey is a new discovery.</p>
+          <p >Thank you for choosing Rail Scouts—where every journey is a new discovery.</p>
       </div>
   </section>
   
@@ -137,23 +146,10 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
   <img class="normalImage" src="https://th.bing.com/th/id/OIP.EffTPxAsq-o6pF3hT4UrkwHaE8?rs=1&pid=ImgDetMain" alt="">
  </div>
    </section>
-<!-- 
-   <section class="page3">
-    <div class="allimages">
-     <img class="normalImage" src="https://th.bing.com/th/id/OIP.a7L6wTJMumPwe8VhIKrSVQHaFj?w=245&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
-     <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
-     <img class="normalImage" src="https://th.bing.com/th/id/R.8acdbc9c68a585a5780832ffb6e72a43?rik=I5zc9eoJDBA4cw&pid=ImgRaw&r=0" alt="">
-     <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
-     <img class="normalImage" src="https://th.bing.com/th/id/OIP.y0JX6Z7jeS6wyDj6A8iZpgHaE8?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
-     <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
-     <img class="normalImage" src="https://th.bing.com/th/id/OIP.jNRRDJe_Pam2hwBzuLVGBQHaHC?w=190&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
-     <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
-     <img class="normalImage" src="https://th.bing.com/th/id/OIP.EffTPxAsq-o6pF3hT4UrkwHaE8?rs=1&pid=ImgDetMain" alt="">
-    </div>
-      </section> -->
+
 
    
-   <!-- <section class="pageextra">
+   <section class="pageextra">
     <div class="allimagese">
      <img class="normalImagee" src="https://th.bing.com/th/id/OIP.a7L6wTJMumPwe8VhIKrSVQHaFj?w=245&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
      <img class="arrowe" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
@@ -163,7 +159,7 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
      <img class="arrowe" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
      <img class="normalImagee" src="https://th.bing.com/th/id/OIP.jNRRDJe_Pam2hwBzuLVGBQHaHC?w=190&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
     </div>
-      </section> -->
+      </section>
 
    <section class="page4 developerr">
     
@@ -264,22 +260,16 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
     </div>
 </section>
 
-<footer class="footer">
-    <div class="footer-container">
-        <p>&copy; 2024 Railway Application. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#" aria-label="LinkedIn"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-        </div>
-        <p><a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
-    </div>
-</footer>
+<div class="ham"> <i  class="fa-solid fa-bars"></i></div>
+
 
 </div>
 
-
-
+<script>
+    AOS.init({
+        duration: 1000, // Duration of animations in milliseconds
+    });
+</script>
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
 
     <script
@@ -295,6 +285,7 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
       referrerpolicy="no-referrer"
     ></script>
     <script src="index.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+ 
 </body>
 </html>

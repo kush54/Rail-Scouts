@@ -2,9 +2,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: black;
-    /* height: auto; */
-    overflow-x: hidden;
-    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* overflow-x: hidden; */
 
 }
 
@@ -66,7 +64,6 @@ opacity: 0;
 
 .page1{
     height: 100vh;
-    /* display: none; */
     /* background-color: black; */
     padding: 0;
     margin: 0;
@@ -130,6 +127,7 @@ a{
 .do {
     position: relative;
     cursor: pointer;
+    font-family:sans-serif ;
   }
   
   .do::after {
@@ -229,22 +227,22 @@ ul a:hover {
 }
 
 
-.page2,.page4,.pageextra{
+.page1,.page2,.page3,.page4,.tech-stack{
     height: 100vh;
-    /* display: none; */
+    display: none;
+}
+.pageextra{
+    display: none;
 }
 .page4{
-    height: auto;
+    height: 100vh;
 }
 .page2{
     height: auto;
 }
 .page3{
-    /* background-color: black; */
     background-color: lightblue;
-    /* height: 100vh; */
     height: auto;
-   /* display: none; */
    overflow-x: auto;
 }
 
@@ -440,102 +438,7 @@ background-color: red;
 
 
 
-@media screen and (max-width: 600px) {
-    .rslaptop{
-        display: none;
-    }
-    .page3{
-        display: none;
-    }
-    .rsmobile{
-        display: block;
-        margin-left: 3vw;
-    }
-    .trainImage{
-        margin-left: 25vw;
-    }
-    .page1,.page2,.page3,.page4{
-      background-color: black;
-    }
-    
-    .page1{
-        height: 110vh;
-    }
-  .textlogo{
-    font-size: 3rem;
-    margin-top: 8vh;
-  }
 
-  nav{
-    height: 13vh;
-  }
-  ul{
-    display: none;
-  }
-  .full{
-    display: block;
-  }
-  .left{
-    border-radius: 0;
-    width: 95vw;
-    margin-left: 10px;
-    padding: 0;
-    height: 50vh;
-    overflow-y: auto;
-}
-.left p{
-    font-size: 1.4rem;
-    width: 80vw;
-    margin-left: -8vw;
-}
-.right img{
-  height: 30vh;
-  width: 70vw;
-  margin-top: 5vh;
-}
-
-
-.page2{
-    height: 90vh;
-    background-color: white;
-}
-.page4{
-    background-color: white;
-
-}
-.pageextra{
-    display: none;
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: 90vh;
-    background-color: black;
-}
-.allimagese{
-    display: block;
-    
-}
-.normalImagee{
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  margin-left: 20vw;
-  margin-bottom: 3vh;
-}
-.arrowe{
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    height: 50px;
-    width: 50px;
-    margin-left: -35vw;
-}
-}
 
 
 .developerr {
@@ -688,7 +591,7 @@ p {
 }
 
 .footer {
-    background-color:white;
+    background-color:rgb(122, 197, 220);
     /* background-color: lightblue; */
     color: #fff;
     padding: 20px 0;
@@ -815,6 +718,166 @@ p {
     -o-border-radius: 24px ;
   }
 
+  .ham{
+    display: none;
+  }
 
  
-  
+  .page4{
+    height: auto;
+  }
+
+
+
+
+.show{
+    display: none;
+}
+
+  @media screen and (max-width: 600px) {
+    .rslaptop{
+        display: none;
+        
+    }
+    .page3{
+        display: none;
+    }
+    .rsmobile{
+        display: block;
+        margin-left: 3vw;
+        color: lightblue;
+    }
+    .trainImage{
+        margin-left: 25vw;
+    }
+   
+    
+    .page1{
+        height: auto;
+    }
+  .textlogo{
+    font-size: 1.5rem;
+    margin-top: 8vh;
+  }
+
+  /* .page3{
+    display: none;
+} */
+  .ham{
+    display: block;
+  }
+
+.ham  i {
+    color: black; /* Change color */
+    font-size: 24px; /* Change size */
+}
+
+  nav{
+    height: 13vh;
+    margin-top: -8vh;
+  }
+  ul{
+    display: none;
+  }
+  .full{
+    display: block;
+  }
+  .left{
+    border-radius: 0;
+    width: 95vw;
+    margin-left: 10px;
+    padding: 0;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/265/748/original/two-location-pins-in-gps-navigator-map-vector.jpg");
+    background-size: cover;
+    height: 80vh;
+    /* overflow-y: auto; */
+}
+.left p{
+    font-size: 1.4rem;
+    width: 80vw;
+    height: 100%;
+    margin-left: -8vw;
+    display: none;
+}
+.show{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #27ae60;
+    text-align: center;
+}
+
+.buttons{
+    width: 100vw;
+    text-align: center;
+    /* background-color: red; */
+    margin-left: -5vw;
+    justify-content: center;
+}
+
+.loc{
+    width: 40vw;
+    /* margin-top: 20vh; */
+    font-size: 1rem;
+    background-color: #27ae60;
+}
+
+.right img{
+  height: 30vh;
+  display: none;
+  position: relative;
+  width: 70vw;
+  bottom: 70vh;
+  border-radius:10% ;
+  -webkit-border-radius:10% ;
+  -moz-border-radius:10% ;
+  -ms-border-radius:10% ;
+  -o-border-radius:10% ;
+}
+
+
+.page2{
+    height: auto;
+    background-color: white;
+}
+.page4{
+    background-color: white;
+
+}
+.pageextra{
+    display: block;
+    overflow-y: auto;
+    background-color: lightblue;
+    overflow-x: hidden;
+    height: 90vh;
+}
+.tech-stack{
+    height: auto;
+}
+.allimagese{
+    display: block;
+    
+}
+.normalImagee{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 20vw;
+  margin-bottom: 3vh;
+}
+
+.arrowe{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    height: 50px;
+    width: 50px;
+    margin-left: -35vw;
+}
+}

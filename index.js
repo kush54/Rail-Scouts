@@ -1,5 +1,122 @@
 
 
+
+
+var tl = gsap.timeline()
+
+
+
+
+
+tl.to(".trainImage",{
+  opacity: 1,
+  duration:0.5,
+  scale:1.2
+})
+
+tl.fromTo(".rsmobile, .rslaptop", 
+  { height: 0 }, // Starting height
+  { height: "550px", duration: 2 } // Ending height with decreased duration
+);
+
+
+tl.to(".mdiv",{
+  y:-700,
+  duration:1,
+  opacity:0
+})
+
+
+
+setTimeout(() => {
+   var page0 = document.querySelector(".page0")
+   var page1 = document.querySelector(".page1")
+   var page2 = document.querySelector(".page2")
+   var page3 = document.querySelector(".page3")
+   var page4 = document.querySelector(".page4")
+   var page5 = document.querySelector(".tech-stack")
+   var pageextra = document.querySelector(".pageextra")
+   page0.style.display="none"
+   page1.style.display="block"
+   page2.style.display="block"
+   page3.style.display="block"
+   page4.style.display="block"
+   page5.style.display="block"
+
+   const isMobile = window.matchMedia("(max-width: 600px)").matches;
+            console.log(isMobile)
+            if (!isMobile) {
+              console.log("comp")
+              page3.style.display="block"
+          } else {
+              console.log("mob")
+              page3.style.display="none"
+
+              pageextra.style.display="block"
+          }
+     
+}, 3000);
+
+tl.from(".page1",{
+  scale:0,
+  delay:-0.5
+})
+
+tl.from(".textlogo",{
+  y:-700,
+  duration:0.4,
+  opacity:0
+})
+
+tl.from(".home",{
+  y:-700,
+  duration:0.2,
+  opacity:0
+})
+
+tl.from(".about",{
+  y:-700,
+  duration:0.2,
+  opacity:0
+})
+
+tl.from(".use",{
+  y:-700,
+  duration:0.2,
+  opacity:0
+})
+
+
+tl.from(".developer",{
+  y:-700,
+  duration:0.2,
+  opacity:0
+})
+
+tl.from(".left",{
+  opacity:0,
+  scale:0
+})
+
+tl.from(".left-text",{
+  scale:0
+})
+
+tl.from(".locationImage",{
+  opacity:0,
+  x:-400,
+})
+
+     
+document.querySelector('.developer-container').addEventListener('click', () => {
+  window.scrollTo({
+      top: document.querySelector('.developer').offsetTop,
+      behavior: 'smooth'
+  });
+});
+
+
+
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circles");
 
@@ -29,10 +146,10 @@ const colors = [
   "#fff"
 ];
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector('[data-scroll-container]'),
+//   smooth: true
+// });
 
 circles.forEach(function (circle, index) {
   circle.x = 0;
@@ -80,156 +197,4 @@ document.addEventListener("mousemove",function (e) {
   blurcursor.style.left = e.x-150+"px"
   blurcursor.style.top = e.y-150+"px"
 })
-
-
-
-
-var tl = gsap.timeline()
-
-
-
-
-
-// tl.to(".trainImage",{
-//   opacity: 1,
-//   duration:0.5,
-//   scale:1.2
-// })
-
-// tl.fromTo(".rsmobile, .rslaptop", 
-//   { height: 0 }, // Starting height
-//   { height: "550px", duration: 2 } // Ending height with decreased duration
-// );
-
-
-// tl.to(".mdiv",{
-//   y:-700,
-//   duration:1,
-//   opacity:0
-// })
-
-
-
-// setTimeout(() => {
-//    var page0 = document.querySelector(".page0")
-//    var page1 = document.querySelector(".page1")
-//    var page2 = document.querySelector(".page2")
-//    var page3 = document.querySelector(".page3")
-//    var page4 = document.querySelector(".page4")
-//    var pageextra = document.querySelector(".pageextra")
-//    page0.style.display="none"
-//    page1.style.display="block"
-//    page2.style.display="block"
-//   //  page3.style.display="block"
-//    page4.style.display="block"
-//    const isMobile = window.matchMedia("(max-width: 600px)").matches;
-//             console.log(isMobile)
-//             if (!isMobile) {
-//               console.log("comp")
-//               page3.style.display="block"
-//           } else {
-//               console.log("mob")
-//               pageextra.style.display="block"
-//           }
-     
-// }, 3000);
-
-tl.from(".page1",{
-  scale:0,
-  delay:-0.5
-})
-
-tl.from(".textlogo",{
-  y:-700,
-  duration:0.4,
-  opacity:0
-})
-
-tl.from(".home",{
-  y:-700,
-  duration:0.4,
-  opacity:0
-})
-
-tl.from(".about",{
-  y:-700,
-  duration:0.4,
-  opacity:0
-})
-
-tl.from(".use",{
-  y:-700,
-  duration:0.4,
-  opacity:0
-})
-
-tl.from(".developer",{
-  y:-700,
-  duration:0.4,
-  opacity:0
-})
-
-tl.from(".left",{
-  opacity:0,
-  scale:0
-})
-
-tl.from(".left-text",{
-  scale:0
-})
-
-tl.from(".locationImage",{
-  opacity:0,
-  x:-400,
-})
-
-// const imageContainer = document.querySelector('.re');
-
-//         document.addEventListener('mousemove', (event) => {
-//             const { clientX: x, clientY: y } = event;
-//             const { innerWidth: width, innerHeight: height } = window;
-
-//             const centerX = width / 2;
-//             const centerY = height / 2;
-
-//             // Calculate rotation values based on mouse position
-//             const rotateY = ((x - centerX) / centerX) * 10; // Rotate around Y-axis
-//             const rotateX = -((y - centerY) / centerY) * 10; // Rotate around X-axis
-
-//             // Apply the transformation
-//             imageContainer.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-//         });
-
-
-      
-
-
-     
-
-     
-// Shery.imageMasker(".locationImage" /* Element to target.*/, {
-//   //Parameters are optional.
-//   mouseFollower: true,
-//   text: "Shery",
-//   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-//   duration: 1,
-// });
-
-Shery.imageEffect(".images", {
-  style: 3,
-  /*optional parameters
-  these parameter dose not applies to custom scroll trigger callback */
-  scrollSnapping: true,
-  scrollSpeed: 6,
-  touchSpeed: 6,
-  damping: 7,
-});
-
-
-document.querySelector('.developer-container').addEventListener('click', () => {
-  window.scrollTo({
-      top: document.querySelector('.developer').offsetTop,
-      behavior: 'smooth'
-  });
-});
 
