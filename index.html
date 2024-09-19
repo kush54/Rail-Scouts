@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Montserrat&family=Lora&family=Oswald&family=Raleway&family=Playfair+Display&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
      <!--  Gsap is needed for Basic Effects -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
@@ -17,22 +19,42 @@
 
 <!-- ControlKit is needed for Debug Panel -->
 <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-  </head>
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
+<link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.css">
+<script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+
+<!-- locomotyive  -->
+<script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+" rel="stylesheet">
 
 </head>
 <body>
+    <div data-scroll-container>
 
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+<!-- 
    <section class="page0">
        <div class="mdiv">
         <h1 class="rslaptop">Rail Scouts</h1>
         <h1  class="rsmobile"> RS</h1>
 
-        <img class="trainImage" src="https://th.bing.com/th/id/R.f5922947573c2dc266a00a68af3caecc?rik=mVM%2fA1s95XobOA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fD%2f7%2fo%2fL%2fw%2fT%2fgreen-train-public-service-hi.png&ehk=%2fVinagMlZDPPVgQwHpMVqII1ol%2f157BDgbnSBkSL82A%3d&risl=&pid=ImgRaw&r=0" alt="">
+     
+         <img src="https://th.bing.com/th/id/OIP.z1hK_zb7h8BVqKAmv8uFngHaHa?rs=1&pid=ImgDetMain" alt="" class="trainImage">
        </div>
-   </section>
+   </section> -->
 
     <section class="page1">
         <nav>
@@ -43,25 +65,64 @@
           </h1>
           <!-- <img class="logo" src="https://th.bing.com/th/id/OIP.52sXWVz-alHGrz2QshjeFAHaIC?rs=1&pid=ImgDetMain" alt="" srcset=""> -->
           <ul>
-            <li class="home">Home</li>
-            <li class="about">About</li>
-            <li class="use">Use</li>
-            <li class="developer">Developer</li>
+            <a class="do home">Home</a>
+            <a class="do about">About</a>
+            <a class="do use">Use</a>
+            <a class="do developer">Developer</a>
           </ul>
         </nav>
         <div class="full">
           <div class="left">
-            <p class="left-text">Lorem ipsum dolor😖 sit amet consectetur adipisicing elit. Consectetur vero assumenda ab ex odit, voluptatum a dolor distinctio quam tempora iure rem dolorem fugiat doloremque reiciendis😵‍💫 aperiam, velit numquam aspernatur magni? Beatae alias debitis incidunt recusandae, ex provident veniam temporibus👦. Quam, cum. Quas ipsa, quae voluptatibus quibusdam perferendis🗽 doloribus reiciendis🥷, fugiat nulla consectetur nam voluptates sit commodi veritatis natus eveniet? Voluptatibus corporis illum temporibus suscipit asperiores quas animi quia ullam eius 🚄, non, facilis neque? Nam, corporis at provident natus sunt tenetur assumenda perferendis. Iusto saepe, deserunt quas ut voluptas quidem repudiandae🚆 quia magni quasi nulla recusandae officia facilis atque hic!</p>
-          </div>
+            <p class="left-text">
+               
+                Find My Way is your ultimate navigation companion for railway platforms!  With real-time updates, interactive maps, and easy-to-follow directions, you’ll never feel lost again.  Whether you're catching a train or exploring nearby attractions, let us guide you smoothly to your destination.  Enjoy seamless travel!
+                <span> Tap the given Two modes to find routes</span>
+                <!-- <img src="" alt="" class="text-img"> -->
+              </p>
+              
+        <div class="buttons">
+          <button class="loc yes">Live</button>
+          <button class="loc no">Without-Live</button>
+        </div>
+
+                
+            </div>
+          
           <div class="right">
-            <img class="locationImage" src="https://th.bing.com/th/id/R.31c7e1de758c0110ac64dca8e7a27b04?rik=BA93gr0ffB2FRQ&pid=ImgRaw&r=0" alt="">
+            <!-- <img class="locationImage" src="https://th.bing.com/th/id/R.31c7e1de758c0110ac64dca8e7a27b04?rik=BA93gr0ffB2FRQ&pid=ImgRaw&r=0" alt=""> -->
+             <img src="https://th.bing.com/th/id/OIP.Kiqtbal3MMoH2byCQ1FcoAHaED?rs=1&pid=ImgDetMain" alt="" class="locationImage">
           </div>
         </div>
     </section>
 
-   <section class="page2">
-        
-   </section>
+    
+
+   <section class="page2 aboutt">
+      <div class="about-container">
+          <h2>About Rail Scouts             <img class="logo" src="https://cdn3.iconfinder.com/data/icons/web-ui-color/128/Marker_green-512.png" alt="">
+          </h2>
+          <p>
+              Welcome to <strong>Rail Scouts</strong>, your ultimate companion for exploring the world of rail travel. Whether you're a seasoned traveler or planning your first journey, our application is designed to make your experience seamless and enjoyable.
+          </p>
+          <h3>Our Mission</h3>
+          <p>
+              At Rail Scouts, we believe in the power of train travel to connect people, places, and cultures. Our mission is to provide you with comprehensive tools and information that empower you to discover new destinations, plan your trips effortlessly, and enjoy every moment on the tracks.
+          </p>
+          <h3>What We Offer</h3>
+          <ul>
+              <li><strong>Real-Time Updates:</strong> Stay informed with live updates on train schedules, delays, and platform changes. No more waiting in uncertainty!</li>
+              <li><strong>Personalized Itineraries:</strong> Create custom travel plans tailored to your preferences. Choose your routes, stops, and even nearby attractions to visit along the way.</li>
+              <li><strong>User-Friendly Interface:</strong> Our intuitive design ensures that navigating through schedules and booking tickets is as smooth as your journey itself.</li>
+              <li><strong>Community Reviews:</strong> Read and share experiences with fellow travelers. Discover hidden gems and tips that enhance your travel adventure.</li>
+          </ul>
+          <h3>Join Our Journey</h3>
+          <p>
+              We are passionate about rail travel and dedicated to making your journeys memorable. With Rail Scouts, you'll not only travel from point A to point B but embark on an adventure filled with stories and connections.
+          </p>
+          <p>Thank you for choosing Rail Scouts—where every journey is a new discovery.</p>
+      </div>
+  </section>
+  
 
    <section class="page3">
  <div class="allimages">
@@ -72,11 +133,27 @@
   <img class="normalImage" src="https://th.bing.com/th/id/OIP.y0JX6Z7jeS6wyDj6A8iZpgHaE8?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
   <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
   <img class="normalImage" src="https://th.bing.com/th/id/OIP.jNRRDJe_Pam2hwBzuLVGBQHaHC?w=190&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+  <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
+  <img class="normalImage" src="https://th.bing.com/th/id/OIP.EffTPxAsq-o6pF3hT4UrkwHaE8?rs=1&pid=ImgDetMain" alt="">
  </div>
    </section>
+<!-- 
+   <section class="page3">
+    <div class="allimages">
+     <img class="normalImage" src="https://th.bing.com/th/id/OIP.a7L6wTJMumPwe8VhIKrSVQHaFj?w=245&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+     <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
+     <img class="normalImage" src="https://th.bing.com/th/id/R.8acdbc9c68a585a5780832ffb6e72a43?rik=I5zc9eoJDBA4cw&pid=ImgRaw&r=0" alt="">
+     <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
+     <img class="normalImage" src="https://th.bing.com/th/id/OIP.y0JX6Z7jeS6wyDj6A8iZpgHaE8?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+     <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
+     <img class="normalImage" src="https://th.bing.com/th/id/OIP.jNRRDJe_Pam2hwBzuLVGBQHaHC?w=190&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+     <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
+     <img class="normalImage" src="https://th.bing.com/th/id/OIP.EffTPxAsq-o6pF3hT4UrkwHaE8?rs=1&pid=ImgDetMain" alt="">
+    </div>
+      </section> -->
 
    
-   <section class="pageextra">
+   <!-- <section class="pageextra">
     <div class="allimagese">
      <img class="normalImagee" src="https://th.bing.com/th/id/OIP.a7L6wTJMumPwe8VhIKrSVQHaFj?w=245&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
      <img class="arrowe" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
@@ -86,11 +163,122 @@
      <img class="arrowe" src="https://cdn-icons-png.flaticon.com/512/5529/5529916.png" alt="">
      <img class="normalImagee" src="https://th.bing.com/th/id/OIP.jNRRDJe_Pam2hwBzuLVGBQHaHC?w=190&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
     </div>
-      </section>
+      </section> -->
 
-   <section class="page4">
-
+   <section class="page4 developerr">
+    
+      <div class="developer-container">
+          <h2>Meet Our Developers</h2>
+          <p>
+              Our dedicated team of developers is passionate about creating a seamless railway experience. With a focus on innovation and user satisfaction, we strive to enhance every aspect of your journey.
+          </p>
+          <div class="developer-cards">
+              <div class="developer-card">
+                  <img src="kuljeet.jpeg" alt="Developer 1">
+                  <h3>Kuljeet Singh Chouhan</h3>
+                  <p>Team Leader, Developer</p>
+                  <p>Kuljeet is a seasoned developer with a knack for creating user-friendly applications. he believes in the power of technology to transform travel experiences.</p>
+              </div>
+              <div class="developer-card">
+                  <img src="mahesh.jpeg" alt="Developer 2">
+                  <h3>Mahesh Baraparte</h3>
+                  <p>Backend Engineer</p>
+                  <p>Mahesh specializes in backend systems, ensuring our application runs smoothly and securely. His expertise keeps our data safe and accessible.</p>
+              </div>
+              <div class="developer-card">
+                  <img src="developer3.jpg" alt="Developer 3">
+                  <h3>Adarsh Singh</h3>
+                  <p>UI/UX Designer</p>
+                  <p>Adarsh is a skilled full-stack developer dedicated to creating seamless and intuitive web applications, and his holistic approach ensures that each component works harmoniously .</p>
+              </div>
+              <div class="developer-card">
+                <img src="developer3.jpg" alt="Developer 4">
+                <h3>Mansi Sen</h3>
+                <p>UI/UX Designer</p>
+                <p>Mansi creates stunning, user-friendly designs that elevate the overall experience. She understands that every detail plays a crucial role in making journeys enjoyable.</p>
+            </div>
+            <div class="developer-card">
+                <img src="developer3.jpg" alt="Developer 5">
+                <h3>Dhyan Kamal</h3>
+                <p>UI/UX Designer</p>
+                <p>Dhyan is committed to harnessing the power of machine learning to transform complex challenges into simple, effective solutions</p>
+            </div>
+            <div class="developer-card">
+                <img src="developer3.jpg" alt="Developer 6">
+                <h3>Harshit Rai</h3>
+                <p> Developer</p>
+                <p>Harshit is a talented full-stack developer who crafts seamless, intuitive applications  allowing him to create cohesive, user-centered solutions.</p>
+            </div>
+          </div>
+      </div>
+  
+  
    </section>
+
+   <section class="tech-stack">
+    <div class="tech-container">
+        <h2>Our Tech Stack</h2>
+        <p>We leverage cutting-edge technologies to deliver the best railway experience. Here are the tools and frameworks that power our application:</p>
+        <div class="tech-list">
+            <div class="tech-item">
+                <img  class="re" src="https://th.bing.com/th/id/OIP.33CwBYkmnMfpA9Djup22JwHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="React">
+                <h3>React</h3>
+                <p>A powerful library for building user interfaces.</p>
+            </div>
+            <div class="tech-item">
+                <img  class="re" src="https://logospng.org/download/tailwind-css/tailwind-css-1024.png" alt="React">
+                <h3>Tailwind css</h3>
+                <p>A powerful css library for building user interfaces.</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://th.bing.com/th/id/OIP.CTvVfHEeovAx-0V5-dqVRwHaHa?w=166&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Node.js">
+                <h3>Node.js</h3>
+                <p> for building scalable server-side applications.</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://user-images.githubusercontent.com/234804/38454097-6d04038a-3a9b-11e8-981a-9ae97ea9246a.png" alt="MongoDB">
+                <h3>Three js</h3>
+                <p> creating and displaying animated 3D graphics..</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://miro.medium.com/max/1000/1*7CrSGB37vYF6kWga4PbJGA.png" alt="Express">
+                <h3>Cloudinary</h3>
+                <p>A robust cloud-based image and video management solution.</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn1.iconfinder.com/data/icons/cyber-security-99/32/authentication_authorization_authenticity_identification_cyber_security-1024.png" alt="Express">
+                <h3>Clerk</h3>
+                <p>For authentication Purpose.</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://thumbs.dreamstime.com/z/algorithm-icon-vector-isolated-white-background-logo-concept-algorithm-icon-vector-isolated-white-background-logo-concept-125781568.jpg" alt="CSS3">
+                <h3>A* Algorithm</h3>
+                <p>STo find shortest possible route.</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/013/899/429/original/machine-learning-icon-artificial-intelligence-smart-machine-logo-template-illustration-free-vector.jpg" alt="HTML5">
+                <h3>ML</h3>
+                <p>for general platform 3d model generation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2024 Railway Application. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#" aria-label="LinkedIn"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+        <p><a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
+    </div>
+</footer>
+
+</div>
+
+
 
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
 
