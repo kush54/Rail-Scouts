@@ -881,3 +881,14 @@ p {
     margin-left: -35vw;
 }
 }
+
+.buttons a{
+    text-decoration: none;
+    color: black;
+}
+
+.imp{
+    color: red;
+    padding: 20px;
+    font-size: 1.4rem;
+}
